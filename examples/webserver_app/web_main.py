@@ -10,11 +10,17 @@ VALID_PASSWORD = 'test'
 
 @APP.route('/', methods=('GET',))
 def home():
+    """
+    sample home page
+    """
     return render_template('sample_login.html')
 
 
 @APP.route('/action_page', methods=('POST',))
 def action():
+    """
+    sample action
+    """
     name = request.form.get('uname')
     password = request.form.get('psw')
     if password == VALID_PASSWORD:
@@ -23,4 +29,4 @@ def action():
 
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0', port=80, debug=True)
+    APP.run(host='0.0.0.0', port=80, debug=False)
