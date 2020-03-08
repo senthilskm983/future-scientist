@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="future-scientist",
-    version="0.0.1",
+    version="0.0.2",
     author="Senthil",
     author_email="senthil@example.com",
     description="teaching purpose",
@@ -19,7 +19,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-          'requests',
+        'requests',
+        'Flask'
       ],
     python_requires='>=3.6',
 )
