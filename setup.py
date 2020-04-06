@@ -20,7 +20,8 @@ setuptools.setup(
     ],
     install_requires=[
         'requests',
-        'Flask'
+        'Flask',
+		'PyQt5'
       ],
     python_requires='>=3.6',
 )
